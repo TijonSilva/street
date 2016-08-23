@@ -1,0 +1,18 @@
+ul{
+  width:100%;
+  overflow: auto;
+  text-align:center;
+}
+li.mdl-card {
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+    margin:10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#address, label.mdl-textfield__label{
+  color:#fff;
+  border-color:#fff;
+}

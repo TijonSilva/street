@@ -1,0 +1,26 @@
+{
+  "name": "street",
+  "description": "A project to find stores in a street",
+  "main": "assets/js/src/app.js",
+  "keywords": [
+    "street"
+  ],
+  "authors": [
+    "Murilo Lucas @muhlucas"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/muhlucas/street",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "2.2.3",
+    "angular": "^1.5.8",
+    "material-design-lite": "^1.2.0",
+  }
+}
