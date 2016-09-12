@@ -1,6 +1,10 @@
 # Street
-A project to find stores in a street (http://projetos.muhlucas.com/street/)
+A project to find stores in a street [Street Project](http://projetos.muhlucas.com/street/).
 
-The street have dependences of AngularJs, MDL(Materials-Design-Lite), Jquery.
-Utilizing the API of Google Places for getting informations about the street
-and API Google Maps to getting geolocation of the searching.
+The project was build with 
+  - AngularJs 
+  - MDL(Materials-Design-Lite) 
+  - Jquery
+  - Firebase (save terms of search)
+  - Google Maps API (getting geolocation of the searching)
+  - Google Places API (getting informations about the street) 
