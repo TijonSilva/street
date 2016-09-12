@@ -7,6 +7,10 @@ angular.module("street").controller("homeCtrl", ["$scope", "mapService", "placeS
   $scope.lng = null;
 
   $scope.search = function(address){
+    var searchedId = firebase.database.ref().child("searched")
+      .push({
+        address: address
+      }).key;
 
     $scope.loading = true;
     $scope.places = [];
@@ -18,6 +22,14 @@ angular.module("street").controller("homeCtrl", ["$scope", "mapService", "placeS
         $scope.lat = data[0].geometry.location.lat;
         $scope.lng = data[0].geometry.location.lng;
 
+        var updates = {};
+        updates['/searched/' + searchedId] = {
+          address: address,
+          lat: $scope.lat,
+          lng: $scope.lng
+        };
+        firebase.database.ref().update(updates);
+
         $scope.getPlaces($scope.lat, $scope.lng);
 
       }
@@ -25,7 +37,7 @@ angular.module("street").controller("homeCtrl", ["$scope", "mapService", "placeS
         $scope.loading = false;
       }
     });
-  }
+  };
 
   $scope.getPlaces = function(lat, lng){
     placeService.places(lat, lng, function(data){
@@ -38,5 +50,5 @@ angular.module("street").controller("homeCtrl", ["$scope", "mapService", "placeS
         });
       });
     });
-  }
+  };
 }]);

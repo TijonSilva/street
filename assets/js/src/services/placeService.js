@@ -14,7 +14,7 @@ angular.module('street').service('placeService',['$http', 'config',  function($h
           success.call(this, results);
         }
       });
-  }
+  };
 
   this.detail = function (placeId, success){
     var request = { placeId: placeId};
@@ -23,6 +23,6 @@ angular.module('street').service('placeService',['$http', 'config',  function($h
         success.call(this, place);
       }
     });
-  }
+  };
 
 }]);

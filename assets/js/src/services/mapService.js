@@ -7,6 +7,6 @@ angular.module('street').service('mapService',['$http', 'config',  function($htt
         success.call(this, data.results);
       }
     });
-  }
+  };
 
 }]);
