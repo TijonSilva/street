@@ -5,10 +5,9 @@ ul{
 }
 .mdl-card {
     display:inline-block;
-    display:inline; /*IE7*/
-    zoom:1; /*IE7*/
     text-align: left;
     vertical-align: top;
+    margin: 10px;
 }
 
 .mdl-textfield__input, .mdl-textfield__label{

@@ -7,7 +7,7 @@ angular.module("street").controller("homeCtrl", ["$scope", "mapService", "placeS
   $scope.lng = null;
 
   $scope.search = function(address){
-    var searchedId = firebase.database.ref().child("searched")
+    var searchedId = firebase.database().ref().child("searched")
       .push({
         address: address
       }).key;
@@ -28,7 +28,7 @@ angular.module("street").controller("homeCtrl", ["$scope", "mapService", "placeS
           lat: $scope.lat,
           lng: $scope.lng
         };
-        firebase.database.ref().update(updates);
+        firebase.database().ref().update(updates);
 
         $scope.getPlaces($scope.lat, $scope.lng);
 

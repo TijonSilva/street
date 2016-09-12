@@ -15,7 +15,7 @@
    var angular = ["./assets/vendor/angular/angular.min.js",
       "./assets/vendor/angular/angular.min.js.map"];
 
-   var dmlDirJs = "./assets/js/dml";
+   var dmlDirJs = "./assets/js/mdl";
    var dmlJs = ["./assets/vendor/material-design-lite/material.min.js",
       "./assets/vendor/material-design-lite/material.min.js.map"];
 
