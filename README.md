@@ -1,5 +1,5 @@
 # Street
-A project to find stores in a street [Street Project](http://projetos.muhlucas.com/street/).
+A project to find stores in a street [Street Project](https://muhlucas.github.io/street/).
 
 The project was build with 
   - AngularJs 
